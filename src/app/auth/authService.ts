@@ -1,10 +1,10 @@
-import { TokenType } from "utils/TokenType";
-import { generateToken } from "utils/generateToken";
 import { comparePassword } from "../../utils/ComparePassword";
 import { MESSAGE_CODE } from "../../utils/ErrorCode";
 import { hashPassword } from "../../utils/HashPassword";
 import { ErrorApp } from "../../utils/HttpError";
 import { MESSAGES } from "../../utils/Messages";
+import { TokenType } from "../../utils/TokenType";
+import { generateToken } from "../../utils/generateToken";
 import { createUser, getUserByEmail } from "../users/userRepository";
 import { UserLoginBodyRequest, UserRegistBodyRequest } from "./authDTO";
 
