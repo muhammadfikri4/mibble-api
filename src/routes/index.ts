@@ -1,11 +1,13 @@
 import { Router, type Request, type Response } from "express";
 import authRouter from '../app/auth/authRoute';
+import threadRouter from '../app/thread/threadRoute';
 import { MESSAGE_CODE } from "../utils/ErrorCode";
 import { MESSAGES } from "../utils/Messages";
 
 const route = Router();
 
 route.use('/auth', authRouter)
+route.use('/thread', threadRouter)
 
 route.get("/", (req: Request, res: Response) => {
     return res.json({ message: "Hello World 🚀" })

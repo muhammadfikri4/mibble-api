@@ -1,6 +1,7 @@
 export const MESSAGES = {
     CREATED: {
-        USER: "User created successfully"
+        USER: "User created successfully",
+        THREAD: "Thread created successfully",
 
     },
     ERROR: {
@@ -28,6 +29,7 @@ export const MESSAGES = {
             NAME: "Name must be a string",
             PASSWORD_TYPE: "Password must be a string",
             PASSWORD_TRIM: "Password must not contain leading or trailing spaces",
+            THREAD: "Thread must be a string",
 
         },
         UNAUTHORIZED: {
@@ -45,6 +47,7 @@ export const MESSAGES = {
             NEW_PASSWORD: "New Password is required",
             OTP_KEY: "OTP Key is required",
             OTP: "OTP is required",
+            THREAD: "Thread is required",
         },
         RELATION: {
             ANGKATAN: "Angkatan cannot be deleted because it has a relationship"

@@ -27,14 +27,12 @@ model User {
 }
 
 model Thread {
-  id           String    @id @default(uuid())
-  thread       String
-  likeCount    Int?      @default(0) @map("like_count")
-  commentCount Int       @default(0) @map("comment_count")
-  userId       String    @map("user_id")
-  user         User      @relation(fields: [userId], references: [id])
-  Comment      Comment[]
-  Like         Like[]
+  id      String    @id @default(uuid())
+  thread  String
+  userId  String    @map("user_id")
+  user    User      @relation(fields: [userId], references: [id])
+  Comment Comment[]
+  Like    Like[]
 }
 
 model Comment {
