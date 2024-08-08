@@ -58,13 +58,11 @@ export const MESSAGES = {
     },
     SUCCESS: {
         LOGIN: "User logged in successfully",
-        ACARA: {
-            GET: "Success to fetch Acara",
-            DELETE: "Success to delete Acara",
-            UPDATE: "Success to update Acara"
-        },
         PASSWORD: {
             CHANGE: "Success to change password"
         },
+        PROFILE: {
+            GET: "Success to get profile"
+        }
     }
 }
